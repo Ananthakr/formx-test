@@ -1,0 +1,27 @@
+
+<html>
+
+<head>
+ <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>Data collection test</h1><br/>
+    <h2>Form HTML ID: test_form</h2>
+    <h2>This page has TrackProject, TrackForm</h2>
+    <form id=test_form>
+        <input name=name type=text value="test" />
+        <input name=age type=text value="21" />
+        <input name=sex type=text value="sex" />
+        <input name=fx_trj_horse type=text />
+        <input type=submit id="submit" />
+    </form>
+</body>
+<script src="http://static_formx.cyces.co/tracker/v1/bundle.js"></script>
+<script>
+    var formx = FormX.set()
+    formx.trackProject('Test Project_5abfc809-047d-4939-bdb4-ac6700b1d457')
+    formx.trackForm('Details form_16b6574c-6c60-481c-b1e1-8c1beef6e279', 'form_id')
+    formx.start()
+</script>
+</html>
